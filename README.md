@@ -34,9 +34,9 @@ To view the portfolio locally on your machine, follow the steps below:
 
 Here are a few projects showcased in the portfolio:
 
-1. **NBA Poeltl Solver**:
-2. **Social Distribution**:
-3. **Dragonshell**:
+1. **NBA Poeltl Solver**
+2. **Social Distribution**
+3. **Dragonshell**
 
 ## Contact
 
