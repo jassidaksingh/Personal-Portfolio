@@ -22,13 +22,13 @@ This portfolio features a **3D desktop model** at its core, providing a unique, 
 To view the portfolio locally on your machine, follow the steps below:
 
 1. **Clone the repository**:
-    git clone https://github.com/jassidaksingh/person-portfolio.git
+    ```git clone https://github.com/jassidaksingh/person-portfolio.git```
 2. **Navigate to the project directory**:
-    cd person-portfolio
+    ```cd person-portfolio```
 3. **Install the required dependencies**:
-    npm install
+    ```npm install```
 4. **Run the development server**:
-    npm run dev
+    ```npm run dev```
 
 ## Projects Featured
 
