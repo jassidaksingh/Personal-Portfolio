@@ -17,6 +17,7 @@ import {
     docker,
     meta,
     starbucks,
+    fluenty,
     tesla,
     singhenterprises,
     shopify,
@@ -126,7 +127,7 @@ import {
     {
       title: "Web Developer",
       company_name: "Fluenty",
-      icon: starbucks,
+      icon: fluenty,
       iconBg: "#383E56",
       date: "January 2024 - Present",
       points: [
@@ -142,6 +143,18 @@ import {
       icon: singhenterprises,
       iconBg: "#E6DEDD",
       date: "September 2024 - Dec 2024",
+      points: [
+        "Developing and maintaining custom e-commerce website to digitize the retail store’s operations and improve online sales",
+        "Implementing product management and secure user authentication using Django and React.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+      ],
+    },
+    {
+      title: "Sales Manager",
+      company_name: "Knok - Telus Partner",
+      icon: knok,
+      iconBg: "#E6DEDD",
+      date: "May 2023 - August 2024",
       points: [
         "Developing and maintaining custom e-commerce website to digitize the retail store’s operations and improve online sales",
         "Implementing product management and secure user authentication using Django and React.",
