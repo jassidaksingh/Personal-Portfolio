@@ -18,6 +18,7 @@ import {
     meta,
     starbucks,
     fluenty,
+    knok,
     tesla,
     singhenterprises,
     shopify,
