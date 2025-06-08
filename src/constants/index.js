@@ -130,7 +130,7 @@ import {
       company_name: "Fluenty",
       icon: fluenty,
       iconBg: "#383E56",
-      date: "January 2024 - Present",
+      date: "January 2025 - April 2025",
       points: [
         "Developing and maintaining web-based platform to connect native Canadian English instructors with Brazilian students, enhancing English education in schools through real-time interaction.",
         // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
