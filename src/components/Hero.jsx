@@ -25,7 +25,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
+      <div className='w-full h-full flex items-center justify-center'>
+        <ComputersCanvas />
+      </div>
 
     </section>
   );
