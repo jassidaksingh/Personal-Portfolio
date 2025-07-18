@@ -180,19 +180,19 @@ const Terminal = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5 }}
       className={`w-full max-w-2xl mx-auto mt-10 rounded-lg overflow-hidden ${
-        isDarkMode ? 'bg-[#1E1E1E]' : 'bg-[#2D2D2D]'
+        isDarkMode ? 'bg-[#1b1b1f]' : 'bg-[#f3f4f6] border border-[#e5e7eb]'
       } shadow-xl`}
       onClick={handleTerminalClick}
     >
       {/* Terminal Header */}
-      <div className="flex items-center px-4 py-2.5 bg-[#323232]">
+      <div className={`flex items-center px-4 py-2.5 ${isDarkMode ? 'bg-[#323232]' : 'bg-[#e9ecef] border-b border-[#e5e7eb]'}`}>
         <div className="flex space-x-2">
           <div className="w-3 h-3 rounded-full bg-[#FF605C]"></div>
           <div className="w-3 h-3 rounded-full bg-[#FFBD44]"></div>
           <div className="w-3 h-3 rounded-full bg-[#00CA4E]"></div>
         </div>
         <div className="flex-1 text-center">
-          <span className="text-gray-400 text-sm font-mono">{currentDir}</span>
+          <span className={`text-sm font-mono ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>{currentDir}</span>
         </div>
       </div>
 
@@ -204,7 +204,7 @@ const Terminal = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-gray-400 mb-4"
+            className={`mb-4 ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}
           >
             <span className="text-sm">
               Welcome to my interactive terminal!
@@ -219,12 +219,15 @@ const Terminal = () => {
           <div key={`${index}-${item.command}-${Date.now()}`} className="mb-4">
             <div className="flex items-start text-sm">
               <span className="text-[#00CA4E]">➜</span>
-              <span className="text-[#c89050] ml-2">{currentDir}</span>
-              <span className="text-white ml-2">$</span>
-              <span className="text-white ml-2">{item.command}</span>
+              <span className={`ml-2 ${isDarkMode ? 'text-[#c89050]' : 'text-[#b87030]'}`}>{currentDir}</span>
+              <span className={`ml-2 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>$</span>
+              <span className={`ml-2 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>{item.command}</span>
             </div>
             {item.output.map((line, i) => (
-              <div key={`${index}-${i}-${line}-${Date.now()}`} className="text-gray-300 ml-4 mt-1 text-sm">
+              <div 
+                key={`${index}-${i}-${line}-${Date.now()}`} 
+                className={`ml-4 mt-1 text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}
+              >
                 {line}
               </div>
             ))}
@@ -234,15 +237,17 @@ const Terminal = () => {
         {/* Current Input Line */}
         <div className="flex items-start text-sm">
           <span className="text-[#00CA4E]">➜</span>
-          <span className="text-[#c89050] ml-2">{currentDir}</span>
-          <span className="text-white ml-2">$</span>
+          <span className={`ml-2 ${isDarkMode ? 'text-[#c89050]' : 'text-[#b87030]'}`}>{currentDir}</span>
+          <span className={`ml-2 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>$</span>
           <input
             ref={inputRef}
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            className="flex-1 ml-2 bg-transparent text-white outline-none border-none text-sm"
+            className={`flex-1 ml-2 bg-transparent outline-none border-none text-sm ${
+              isDarkMode ? 'text-white' : 'text-gray-800'
+            }`}
             spellCheck="false"
             autoComplete="off"
           />
