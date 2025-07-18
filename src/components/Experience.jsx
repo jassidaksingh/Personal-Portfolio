@@ -4,6 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import { useTheme } from "./ThemeProvider";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -13,13 +14,18 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
+  const { isDarkMode } = useTheme();
+  
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: isDarkMode ? "#1b1b1f" : "#f3f4f6",
+        color: isDarkMode ? "#fff" : "#000",
+        border: isDarkMode ? "none" : "1px solid #e5e7eb",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ 
+        borderRight: `7px solid ${isDarkMode ? "#1b1b1f" : "#f3f4f6"}` 
+      }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -33,7 +39,9 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className={`text-[24px] font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>
+          {experience.title}
+        </h3>
         <p
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
@@ -46,7 +54,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className={`text-[14px] pl-1 tracking-wider ${isDarkMode ? 'text-white-100' : 'text-gray-800'}`}
           >
             {point}
           </li>
@@ -60,10 +68,10 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p className={`${styles.sectionSubText} text-center text-black dark:text-secondary`}>
           What I have done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2 className={`${styles.sectionHeadText} text-center text-black dark:text-white`}>
           Work Experience.
         </h2>
       </motion.div>

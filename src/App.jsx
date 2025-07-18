@@ -1,25 +1,27 @@
 import { BrowserRouter } from "react-router-dom";
-
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works } from "./components";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-black'>
-        <div className='bg-black'>
-          <Navbar />
-          <Hero />
+    <ThemeProvider>
+      <BrowserRouter>
+        <div className='relative z-0 bg-primary-light dark:bg-primary-dark'>
+          <div className='bg-primary-light dark:bg-primary-dark'>
+            <Navbar />
+            <Hero />
+          </div>
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          {/* <Feedbacks /> */}
+          <div className='relative z-0'>
+            <Contact />
+          </div>
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        {/* <Feedbacks /> */}
-        <div className='relative z-0'>
-          <Contact />
-        </div>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
