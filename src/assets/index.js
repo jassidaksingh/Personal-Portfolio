@@ -25,6 +25,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import fluenty from "./company/fluenty.png";
+import ualberta from "./company/ualberta.png";
 import knok from "./company/knok.png";
 import tesla from "./company/tesla.png";
 import singhenterprises from "./company/singhenterprises.png"
@@ -62,6 +63,7 @@ export {
   shopify,
   starbucks,
   fluenty,
+  ualberta,
   knok,
   tesla,
   singhenterprises,

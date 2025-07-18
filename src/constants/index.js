@@ -18,6 +18,7 @@ import {
     meta,
     starbucks,
     fluenty,
+    ualberta,
     knok,
     tesla,
     singhenterprises,
@@ -126,16 +127,28 @@ import {
   
   const experiences = [
     {
-      title: "Web Developer",
+      title: "Product Owner & Full Stack Developer",
       company_name: "Fluenty",
       icon: fluenty,
       iconBg: "#383E56",
       date: "January 2025 - April 2025",
       points: [
-        "Developing and maintaining web-based platform to connect native Canadian English instructors with Brazilian students, enhancing English education in schools through real-time interaction.",
+        "Led the development of a real-time web platform that connected native Canadian English instructors with over 10,000 Brazilian students to enhance English education through live interaction.",
         // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Integrating video conferencing tools and automated session notifications for seamless virtual classes.",
-        "Built features for session scheduling, progress tracking, and gamified tools like leaderboards and points.",
+        "Designed AI-driven recommendation systems for personalized learning and live progress tracking, resulting in 40% higher student engagement.",
+        "Added secure video calls and live chat to support real-time classes and feedback, making it easier to schedule sessions and improving attendance by 25%.",
+      ],
+    },
+    {
+      title: "Machine Learning Researcher",
+      company_name: " University of Alberta",
+      icon: ualberta,
+      iconBg: "#E6DEDD",
+      date: "January 2025 - April 2025",
+      points: [
+        "Built streaming and batch reinforcement learning agents using Stream-Q and tested them on T-maze environments; eLSTM-RTRL agents converged up to 40% faster than BPTT in long-horizon tasks.",
+        "Implemented and compared eLSTM and RTU models on the Copy Task, achieving over 95% accuracy with eLSTM and showing better memory retention than RTU.",
+        "Used Real-Time Recurrent Learning (RTRL) for fully online training, allowing RL agents to learn in partially observable environments without replay buffers and improving learning efficiency.",
       ],
     },
     {
@@ -143,11 +156,11 @@ import {
       company_name: "Singh Enterprises",
       icon: singhenterprises,
       iconBg: "#E6DEDD",
-      date: "September 2024 - Dec 2024",
+      date: "September 2024 - December 2024",
       points: [
-        "Developing and maintaining custom e-commerce website to digitize the retail store’s operations and improve online sales",
-        "Implementing product management and secure user authentication using Django and React.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Engineered an e-commerce website to digitize the retail store’s operations and increased online sales by 20% through improved product management and intuitive user flows.",
+        "Integrated secure authentication and payment systems using the Stripe API, enhancing user trust and streamlining the checkout experience.",
+        "Refactored backend API architecture and database queries to support real-time inventory updates and reduce response times by 35%.",
       ],
     },
     {
@@ -157,37 +170,11 @@ import {
       iconBg: "#E6DEDD",
       date: "May 2023 - August 2024",
       points: [
-        "Developing and maintaining custom e-commerce website to digitize the retail store’s operations and improve online sales",
-        "Implementing product management and secure user authentication using Django and React.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Sold a full range of Telus products, with a primary focus on security alarm systems, by directly engaging and building relationships with customers to understand and meet their needs.",
+        "Mentored new hires on pitch strategy, objection handling, and daily workflows, accelerating their onboarding and boosting early performance.",
+        "Adapted sales strategies in real-time based on customer behavior and neighborhood patterns, leading to higher close rates in competitive territories",
       ],
     },
-    // {
-    //   title: "Web Developer",
-    //   company_name: "Shopify",
-    //   icon: shopify,
-    //   iconBg: "#383E56",
-    //   date: "Jan 2022 - Jan 2023",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-    // {
-    //   title: "Full stack Developer",
-    //   company_name: "Meta",
-    //   icon: meta,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jan 2023 - Present",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
   ];
   
   const testimonials = [
