@@ -47,10 +47,10 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-black dark:text-white text-[18px] font-bold cursor-pointer flex'>
-            Jassidak &nbsp;
-            <span className='sm:block hidden'> | Portfolio</span>
-          </p>
+          <div className='text-black dark:text-white text-[18px] font-bold cursor-pointer flex items-center'>
+            <span className="whitespace-nowrap">Jassidak</span>
+            <span className='inline-block whitespace-nowrap'>&nbsp;| Portfolio</span>
+          </div>
         </Link>
 
         <div className='hidden sm:flex items-center gap-6'>
@@ -70,7 +70,7 @@ const Navbar = () => {
             )}
           </button>
 
-          <ul className='list-none flex flex-row gap-10'>
+          <ul className='list-none flex flex-row gap-6'>
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
@@ -78,7 +78,7 @@ const Navbar = () => {
                   active === nav.title 
                     ? "text-black dark:text-white" 
                     : "text-gray-600 dark:text-gray-300"
-                } hover:text-black dark:hover:text-white text-[18px] font-medium cursor-pointer`}
+                } hover:text-black dark:hover:text-white text-[16px] font-medium cursor-pointer whitespace-nowrap`}
                 onClick={() => setActive(nav.title)}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
