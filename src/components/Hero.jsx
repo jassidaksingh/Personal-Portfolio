@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 w-full flex justify-center items-center pb-8">
+      <div className="absolute bottom-0 w-full hidden md:flex justify-center items-center pb-8">
         <a href="#about">
           <div className={`w-[35px] h-[64px] rounded-3xl border-4 ${
             isDarkMode ? 'border-white' : 'border-black'
