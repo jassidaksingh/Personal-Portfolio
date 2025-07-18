@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Hero, Navbar, Tech, Works } from "./components";
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, Footer } from "./components";
 import { ThemeProvider } from "./components/ThemeProvider";
 
 const App = () => {
@@ -18,6 +18,7 @@ const App = () => {
           <div className='relative z-0'>
             <Contact />
           </div>
+          <Footer />
         </div>
       </BrowserRouter>
     </ThemeProvider>
