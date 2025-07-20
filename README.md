@@ -1,5 +1,8 @@
 # Personal Portfolio
 
+<img width="1647" height="992" alt="image" src="https://github.com/user-attachments/assets/1fd586e4-da8f-4f62-8c41-33e82dee27ae" />
+
+
 Welcome to my personal portfolio website, where I showcase my skills, projects, and passion for development. As a software engineer with expertise in **web development**, **3D modeling**, and **user interface design**, this portfolio highlights some of my most exciting work.
 
 ## Overview
