@@ -206,7 +206,7 @@ Response Guidelines:
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5 }}
-      className={`w-full max-w-2xl mx-auto mt-10 rounded-lg overflow-hidden ${
+      className={`w-full max-w-2xl mx-auto mt-4 rounded-lg overflow-hidden ${
         isDarkMode ? 'bg-[#1b1b1f]' : 'bg-[#f3f4f6] border border-[#e5e7eb]'
       } shadow-xl`}
       onClick={handleTerminalClick}

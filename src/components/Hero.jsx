@@ -8,8 +8,8 @@ const Hero = () => {
   const { isDarkMode } = useTheme();
   
   return (
-    <section className={`relative w-full h-screen mx-auto bg-primary-light dark:bg-primary-dark`}>
-      <div className={`absolute inset-0 max-w-7xl mx-auto ${styles.paddingX} flex flex-col justify-start pt-20`}>
+    <section className={`relative w-full min-h-screen mx-auto bg-primary-light dark:bg-primary-dark`}>
+      <div className={`absolute inset-0 max-w-7xl mx-auto ${styles.paddingX} flex flex-col justify-start pt-20 pb-24`}>
         <div className='flex flex-row items-start gap-5'>
           <div className='flex flex-col justify-center items-center mt-5'>
             <div className='w-5 h-5 rounded-full bg-[#c89050]' />
@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 w-full hidden md:flex justify-center items-center pb-8">
+      <div className="absolute bottom-0 w-full hidden md:flex justify-center items-center pb-8 z-10">
         <a href="#about">
           <div className={`w-[35px] h-[64px] rounded-3xl border-4 ${
             isDarkMode ? 'border-white' : 'border-black'
