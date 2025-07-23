@@ -26,10 +26,11 @@ import {
     carrent,
     jobit,
     tripguide,
-    dragonshell,
     threejs,
+    popscore,
     nba,
     social,
+    dragonshell,
   } from "../assets";
   
   export const navLinks = [
@@ -206,9 +207,38 @@ import {
   
   const projects = [
     {
+      name: "PopScore",
+      description:
+        "PopScore is a full-stack movie review platform that allows users to browse, rate, and review films in a clean, responsive interface. Built with Java Spring Boot and React, it features RESTful API architecture, MongoDB-backed data storage, and user-friendly components styled with Tailwind. Designed for speed and usability, the platform includes optimized queries, dynamic content loading, and secure user authentication.",
+      tags: [
+        {
+          name: "sping boot",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "java",
+          color: "green-text-gradient",
+        },
+        {
+          name: "react",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+      ],
+      image: popscore,
+      source_code_link: "https://github.com/jassidaksingh/PopScore",
+    },
+    {
       name: "NBA Poeltl Solver",
       description:
-        "A Flask app that helps users solve the NBA-themed Poeltl guessing game by providing refined player suggestions based on team, position, and attributes, using API-sourced stats and interactive filtering.",
+        "A Flask-based web app that assists users in solving the NBA-themed Poeltl guessing game. It provides smarter player suggestions by filtering based on live NBA data including team, position, height, age, and jersey number. Real-time stats are fetched through a public API and processed using Pandas for fast, accurate filtering. Users receive instant visual feedback as their guesses narrow the pool of valid players. The app’s interface is simple, responsive, and built for quick interactions.",
       tags: [
         {
           name: "flask",

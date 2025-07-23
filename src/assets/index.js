@@ -33,9 +33,10 @@ import singhenterprises from "./company/singhenterprises.png"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import dragonshell from "./dragonshell.png"
+import popscore from "./popscore.png"
 import nba from "./nba.png";
 import social from "./social.png";
+import dragonshell from "./dragonshell.png"
 
 export {
   logo,
@@ -70,7 +71,8 @@ export {
   carrent,
   jobit,
   tripguide,
-  dragonshell,
+  popscore,
   nba,
   social,
+  dragonshell,
 };
